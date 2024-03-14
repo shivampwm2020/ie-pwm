@@ -165,9 +165,9 @@ const Working = () => {
 
     useEffect(() => {
 
-        setSelectedSubject(null);
-        setSelectedChapter(null);
-        setSelectedLanguage(null);
+        setSelectedSubject("");
+        setSelectedChapter("");
+        setSelectedLanguage("");
         const fetchSubjects = async () => {
             setIsLoadingSubjects(true);
             try {
