@@ -25,9 +25,9 @@ export default async function handler(req, res) {
         formData.append('class', selectedClass);
         formData.append('subject', selectedSubject);
         formData.append('chapter', selectedChapter);
-        if (selectedLanguage) {
-            formData.append('language', selectedLanguage);
-        }
+        // if (selectedLanguage) {
+        //     formData.append('language', selectedLanguage);
+        // }
         if (notes) {
             formData.append('notes', notes);
         }
