@@ -196,8 +196,8 @@ const Working = () => {
 
 
     useEffect(() => {
-        setSelectedChapter(null);
-        setSelectedLanguage(null);
+        setSelectedChapter("");
+        setSelectedLanguage("");
         const fetchChapters = async () => {
             setIsLoadingChapter(true);
             try {
