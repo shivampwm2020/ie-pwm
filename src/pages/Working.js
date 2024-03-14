@@ -39,10 +39,10 @@ const Working = () => {
     const [currentUser, setCurrentUser] = useState(null);
     const [user, setUser] = useState(null);
     const [hamburger, setHamburger] = useState(false);
-    const [selectedClass, setSelectedClass] = useState(null);
-    const [selectedChapter, setSelectedChapter] = useState(null);
-    const [selectedSubject, setSelectedSubject] = useState(null);
-    const [selectedLanguage, setSelectedLanguage] = useState(null);
+    const [selectedClass, setSelectedClass] = useState("");
+    const [selectedChapter, setSelectedChapter] = useState("");
+    const [selectedSubject, setSelectedSubject] = useState("");
+    const [selectedLanguage, setSelectedLanguage] = useState("");
     const [secondDropdownItems, setSecondDropdownItems] = useState([]);
     const [pdfUrl, setPdfUrl] = useState(null);
     const [isLoadingClasses, setIsLoadingClasses] = useState(false);
