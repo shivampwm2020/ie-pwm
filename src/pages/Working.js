@@ -56,12 +56,12 @@ const Working = () => {
     const [languages, setLanguages] = useState([]);
     const [credits, setCurrentCredits] = useState('');
 
-    const [notes, setNotes] = useState(0);
-    const [topics, setTopics] = useState(0);
-    const [mindmap, setMindMap] = useState(0);
-    const [faqs, setFaqs] = useState(0);
+    const [notes, setNotes] = useState('');
+    const [topics, setTopics] = useState('');
+    const [mindmap, setMindMap] = useState('');
+    const [faqs, setFaqs] = useState('');
     const [resfaqs, setResFaqs] = useState('');
-    const [questions, setQuestions] = useState(0);
+    const [questions, setQuestions] = useState('');
     const [fetchPdfTrigger, setFetchPdfTrigger] = useState(false);
 
 
