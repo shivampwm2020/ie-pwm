@@ -141,11 +141,11 @@ const Working = () => {
     
     const handleFAQSClick = () => {
         if (selectedChapter && selectedSubject && selectedClass) {
-            setFaqs("");
+            setFaqs("1");
             setQuestions("");
             setTopics("");
             setMindMap("");
-            setNotes("1");
+            setNotes("");
             setFetchPdfTrigger(prev => !prev);   
         }
     };
@@ -338,10 +338,10 @@ const Working = () => {
                 try {
                     setIsLoading(true);
                     const requestData = {
-                        selectedClass: selectedClass,
-                        selectedSubject: selectedSubject,
-                        selectedChapter: selectedChapter,
-                        selectedLanguage: selectedLanguage,
+                        class: selectedClass,
+                        subject: selectedSubject,
+                        chapter: selectedChapter,
+                        language: selectedLanguage,
                         notes: notes,
                         topics: topics,
                         mindmap: mindmap,
