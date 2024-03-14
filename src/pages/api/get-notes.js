@@ -44,6 +44,8 @@ export default async function handler(req, res) {
             formData.append('question', questions);
         }
 
+        console.log(formData);
+
         const response = await fetch('https://testing-mjbcb2fuvq-em.a.run.app/generate_notes', {
             method: 'POST',
             body: formData,
