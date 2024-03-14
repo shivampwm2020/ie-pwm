@@ -141,11 +141,11 @@ const Working = () => {
     
     const handleFAQSClick = () => {
         if (selectedChapter && selectedSubject && selectedClass) {
-            setFaqs("1");
+            setFaqs("");
             setQuestions("");
             setTopics("");
             setMindMap("");
-            setNotes("");
+            setNotes("1");
             setFetchPdfTrigger(prev => !prev);   
         }
     };
