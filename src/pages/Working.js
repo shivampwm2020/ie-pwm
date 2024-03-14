@@ -130,22 +130,22 @@ const Working = () => {
 
     const handleNotesClick = () => {
         if (selectedChapter && selectedSubject && selectedClass) {
-            setFaqs(0);
-            setQuestions(0);
-            setTopics(0);
-            setMindMap(0);
-            setNotes(1);
+            setFaqs("");
+            setQuestions("");
+            setTopics("");
+            setMindMap("");
+            setNotes("1");
             setFetchPdfTrigger(prev => !prev);  
         }
     };
     
     const handleFAQSClick = () => {
         if (selectedChapter && selectedSubject && selectedClass) {
-            setFaqs(1);
-            setQuestions(0);
-            setTopics(0);
-            setMindMap(0);
-            setNotes(0);
+            setFaqs("1");
+            setQuestions("");
+            setTopics("");
+            setMindMap("");
+            setNotes("");
             setFetchPdfTrigger(prev => !prev);   
         }
     };
@@ -154,11 +154,11 @@ const Working = () => {
 
 
     const handleQuestionClick = () => {
-        setFaqs(0);
-        setQuestions(1);
-        setTopics(0);
-        setMindMap(0);
-        setNotes(0);
+        setFaqs("");
+        setQuestions("1");
+        setTopics("");
+        setMindMap("");
+        setNotes("");
     };
 
 
