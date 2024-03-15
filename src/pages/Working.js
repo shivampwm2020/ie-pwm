@@ -349,7 +349,7 @@ const Working = () => {
                         question: questions,
                     };
                     const requestBody = JSON.stringify(requestData);
-                    const response = await fetch('https://testing-mjbcb2fuvq-em.a.run.app/generate_notes', {
+                    const response = await fetch('https://testing-1-67wxymq5ua-uc.a.run.app/generate_notes', {
                         method: 'POST',
                         body: requestBody,
                         headers: {
