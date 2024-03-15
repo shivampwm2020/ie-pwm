@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Cors from 'cors';
-import initMiddleware from '../lib/cors'
+// import Cors from 'cors';
+// import initMiddleware from '../lib/cors'
 import Navbar from '../components/navbar2';
 import DropdownButton1 from '../components/dropdown1';
 import app from '../firebaseConfig';
@@ -30,11 +30,11 @@ import cross from '../assets/crossw.svg';
 
 const auth = getAuth(app);
 const firestore = getFirestore(app);
-const cors = initMiddleware(
-    Cors({
-        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    })
-);
+// const cors = initMiddleware(
+//     Cors({
+//         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+//     })
+// );
 const Working = () => {
     const [currentUser, setCurrentUser] = useState(null);
     const [user, setUser] = useState(null);
